@@ -834,7 +834,7 @@ function SpawnItemsRandomly() {
 
   //SNIPER
 
-  setInterval(function (joueur) {
+  setInterval(function () {
     var random = Math.floor(Math.random() * 10);
     var RoomContainsSniper = false;
     for (var i = 0; i < room.currentItemList.length; i++) {
@@ -843,7 +843,7 @@ function SpawnItemsRandomly() {
     if (
       random < 1 &&
       gameIsRunning &&
-      joueur.corps.length > 4 &&
+      snake.corps.length > 4 &&
       !RoomContainsSniper
     ) {
       var clockdiv = document.createElement("div");
