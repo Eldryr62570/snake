@@ -1,0 +1,116 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  background-color: rgb(0, 4, 255);
+}
+.roomContainer {
+  position: absolute;
+  height: 0%;
+  width: 80%;
+  top: 50px;
+  background-color: grey;
+  overflow: hidden;
+  transform: scale(1.1);
+  background-image: url(./asset/img/banquise.jpg);
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+}
+.score {
+  position: absolute;
+  top: 0px;
+  background-color: grey;
+  height: 50px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.cache {
+  opacity: 1;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.5s ease-in-out;
+}
+
+.display {
+  opacity: 1;
+}
+.buttonStart {
+  background-color: grey;
+  height: 100px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  content: "Play";
+  box-shadow: 4px 6px 50px 18px #ff009d;
+  cursor: pointer;
+}
+.buttonStart:hover {
+  box-shadow: inset 4px 6px 50px 18px #09ff00;
+  box-shadow: inset 4px 6px 50px 18px #09ff00;
+}
+.gameover {
+  opacity: 0;
+  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  z-index: 10000;
+  transition: all 0.5s ease-in-out;
+}
+.buttonRestart {
+  cursor: pointer;
+  flex-direction: column;
+  background-color: grey;
+  height: 100px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  content: "Play";
+  box-shadow: 4px 6px 50px 18px #ff009d;
+}
+.buttonRestart:hover {
+  box-shadow: inset 4px 6px 50px 18px #09ff00;
+  box-shadow: inset 4px 6px 50px 18px #09ff00;
+}
+img {
+  -webkit-transform: rotate(10deg) scale(1.25);
+  transform: rotate(10deg) scale(1.25);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.pasdemannette{
+  position: absolute;
+  width: 20%;
+  height: 5%;
+  margin-left:80vw;
+  margin-top:90vh;
+  color:white;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 30px;
+}
+.pasdemannette:hover{
+  transform: rotate(10deg) scale(1.25);
+}
